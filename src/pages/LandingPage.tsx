@@ -1,7 +1,10 @@
-import { Col, Row } from "antd";
+import { Carousel, Col, Row } from "antd";
 import React from "react";
 import TextBox from "../components/TextBox";
 import { Bell, Eye } from "@phosphor-icons/react";
+import BellCard from "../components/cards/BellCard";
+import ChartCard from "../components/cards/ChartCard";
+import TimeCard from "../components/cards/TimeCard";
 
 function LandingPage() {
 	return (
@@ -16,13 +19,27 @@ function LandingPage() {
 				}}
 			>
 				<Row>
-					<TextBox
-						icon={<Bell size={34} />}
-						heading="Get notified when a highly correlated whale makes a move"
-						subheading="Find out when a certain whale moves more than any preset amount on-chain or when a dormant whale you care about becomes active."
-						align="left"
-						color="white"
-					/>
+					<Col xs={24} lg={12}>
+						<TextBox
+							icon={<Bell size={34} />}
+							heading="Get notified when a highly correlated whale makes a move"
+							subheading="Find out when a certain whale moves more than any preset amount on-chain or when a dormant whale you care about becomes active."
+							align="left"
+							color="white"
+						/>
+					</Col>
+					<Col xs={24} lg={12}>
+						<Carousel
+							autoplay
+							effect={"scrollx"}
+							dots={false}
+							style={{ width: "100%", height: "100%" }}
+						>
+							<BellCard />
+							<ChartCard />
+							<TimeCard />
+						</Carousel>
+					</Col>
 				</Row>
 				<Row>
 					<TextBox
