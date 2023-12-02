@@ -47,14 +47,15 @@ function Footer() {
 					margin: "0 0 0 1rem",
 				}}
 			>
-					<Image
-						preview={false}
-						src={Logo}
-						style={{ margin: "8rem 0 0 0", padding: "0 1rem 0 0" }}
-					/>
+				<Image
+					preview={false}
+					src={Logo}
+					style={{ margin: "8rem 0 0 0", padding: "0 1rem 0 0" }}
+				/>
 				<div style={{ display: "flex", width: "70vw", overflow: "scroll" }}>
-					{feedbacks.map((i) => (
+					{feedbacks.map((i, idx) => (
 						<FeedbackCard
+							key={idx}
 							name={i.name}
 							title={i.title}
 							statement={i.statement}
