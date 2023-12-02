@@ -1,11 +1,11 @@
-import { Carousel, Col, Row } from "antd";
+import { Carousel, Col, Image, Row } from "antd";
 import React from "react";
 import TextBox from "../components/TextBox";
 import { Bell, Eye } from "@phosphor-icons/react";
 import BellCard from "../components/cards/BellCard";
 import ChartCard from "../components/cards/ChartCard";
 import TimeCard from "../components/cards/TimeCard";
-
+import Dashboard from "../assets/dashboard.svg";
 function LandingPage() {
 	return (
 		<Row>
@@ -15,7 +15,7 @@ function LandingPage() {
 				style={{
 					background:
 						"radial-gradient(ellipse at left bottom,#1FA911, #2F15D0,#000000)",
-					height: "100vh",
+					// height: "100vh",
 				}}
 			>
 				<Row>
@@ -42,16 +42,21 @@ function LandingPage() {
 					</Col>
 				</Row>
 				<Row>
-					<TextBox
-						icon={<Eye size={34} />}
-						heading="Watch what the whales are doing"
-						subheading="All whales are not equal. Know exactly what the whales impacting YOUR portfolio are doing."
-						align="right"
-						color="white"
-					/>
+					<Col xs={24} lg={12}>
+						<Image src={Dashboard} />
+					</Col>
+					<Col xs={24} lg={12}>
+						<TextBox
+							icon={<Eye size={34} />}
+							heading="Watch what the whales are doing"
+							subheading="All whales are not equal. Know exactly what the whales impacting YOUR portfolio are doing."
+							align="right"
+							color="white"
+						/>
+					</Col>
 				</Row>
 			</Col>
-			<Col xs={24} lg={8} style={{ background: "#FFFFFF", height: "100vh" }}>
+			<Col xs={24} lg={8} style={{ background: "#FFFFFF" }}>
 				col-6
 			</Col>
 		</Row>
