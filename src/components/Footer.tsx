@@ -33,14 +33,18 @@ function Footer() {
 					fontSize: "2rem",
 					fontWeight: "500",
 					color: "white",
-					margin: "1rem",
+					margin: "0 2rem 1rem 0",
 				}}
 			>
 				Testimonials
 			</div>
-			<hr style={{ width: "100%", margin: "0 1rem" }} />
-			<div style={{ display: "flex" }}>
-				<Image preview={false} src={Logo} style={{ margin: "8rem 0" }} />
+			<hr style={{ width: "100%", margin: "0 2rem" }} />
+			<div style={{ display: "flex", margin: "0 0 0 1rem" }}>
+				<Image
+					preview={false}
+					src={Logo}
+					style={{ margin: "8rem 0 0 0", padding: "0 1rem 0 0" }}
+				/>
 				<div style={{ display: "flex", maxWidth: "70%", overflow: "scroll" }}>
 					{feedbacks.map((i) => (
 						<FeedbackCard

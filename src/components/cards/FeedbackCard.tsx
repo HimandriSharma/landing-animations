@@ -14,7 +14,7 @@ function FeedbackCard({ name, title, statement }: PropType) {
 				maxWidth: "25rem",
 				minHeight: "10rem",
 				maxHeight: "10rem",
-				margin: "3rem 1rem",
+				margin: "3rem 0.5rem",
 			}}
 		>
 			<div style={{ display: "flex", alignItems: "center", margin: "5px 0" }}>
