@@ -6,6 +6,7 @@ import BellCard from "../components/cards/BellCard";
 import ChartCard from "../components/cards/ChartCard";
 import TimeCard from "../components/cards/TimeCard";
 import Dashboard from "../assets/dashboard.svg";
+import Footer from "../components/Footer";
 function LandingPage() {
 	return (
 		<Row>
@@ -43,7 +44,7 @@ function LandingPage() {
 				</Row>
 				<Row>
 					<Col xs={24} lg={12}>
-						<Image src={Dashboard} />
+						<Image src={Dashboard} preview={false} />
 					</Col>
 					<Col xs={24} lg={12}>
 						<TextBox
@@ -54,6 +55,9 @@ function LandingPage() {
 							color="white"
 						/>
 					</Col>
+				</Row>
+				<Row>
+					<Footer />
 				</Row>
 			</Col>
 			<Col xs={24} lg={8} style={{ background: "#FFFFFF" }}>
