@@ -7,6 +7,7 @@ import ChartCard from "../components/cards/ChartCard";
 import TimeCard from "../components/cards/TimeCard";
 import Dashboard from "../assets/dashboard.svg";
 import Footer from "../components/Footer";
+import SignupForm from "../components/SignupForm";
 function LandingPage() {
 	return (
 		<Row>
@@ -16,7 +17,6 @@ function LandingPage() {
 				style={{
 					background:
 						"radial-gradient(ellipse at left bottom,#1FA911, #2F15D0,#000000)",
-					// height: "100vh",
 				}}
 			>
 				<Row>
@@ -44,7 +44,15 @@ function LandingPage() {
 				</Row>
 				<Row>
 					<Col xs={24} lg={12}>
-						<Image src={Dashboard} preview={false} />
+						<div
+							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
+						>
+							<Image src={Dashboard} preview={false} />
+						</div>
 					</Col>
 					<Col xs={24} lg={12}>
 						<TextBox
@@ -61,7 +69,7 @@ function LandingPage() {
 				</Row>
 			</Col>
 			<Col xs={24} lg={8} style={{ background: "#FFFFFF" }}>
-				col-6
+				<SignupForm />
 			</Col>
 		</Row>
 	);

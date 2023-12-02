@@ -41,7 +41,7 @@ function SignupForm() {
 				style={{
 					fontSize: "0.9rem",
 					fontWeight: "500",
-					margin: "2rem 0 0 0",
+					margin: "2rem",
 				}}
 			>
 				You’ll receive an email with an invite link to join.

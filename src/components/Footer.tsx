@@ -39,13 +39,13 @@ function Footer() {
 				Testimonials
 			</div>
 			<hr style={{ width: "100%", margin: "0 2rem" }} />
-			<div style={{ display: "flex", margin: "0 0 0 1rem" }}>
+			{/* <div style={{ display: "flex", margin: "0 0 0 1rem" }}>
 				<Image
 					preview={false}
 					src={Logo}
 					style={{ margin: "8rem 0 0 0", padding: "0 1rem 0 0" }}
 				/>
-				<div style={{ display: "flex", maxWidth: "70%", overflow: "scroll" }}>
+				<div style={{ display: "flex", maxWidth: "68%", overflow: "scroll" }}>
 					{feedbacks.map((i) => (
 						<FeedbackCard
 							name={i.name}
@@ -54,7 +54,7 @@ function Footer() {
 						/>
 					))}
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }
